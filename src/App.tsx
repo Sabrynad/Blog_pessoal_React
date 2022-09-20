@@ -1,37 +1,19 @@
-import React from 'react';
-import {Grid} from "@material-ui/core";
-import Home from './Page/Home/Home';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Navbar from './components/estaticos/navbar/Navbar';
 import './App.css';
+import Home from './Page/Home/Home';
+import Historia from './Page/historia/Historia';
 
-
-function App() {
+export default function App() {
   return (
-    <>
-    <Grid container spacing={3}>
-      <Grid item xs={12} sm={12}>
-       <Home />
-      </Grid>
-      <Grid item xs={12} sm={6}>
-       <Home />
-      </Grid>
-      <Grid item xs={12} sm={6}>
-       <Home />
-      </Grid>
-      <Grid item xs={12} sm={3}>
-       <Home />
-      </Grid>
-      <Grid item xs={12} sm={3}>
-       <Home />
-      </Grid>
-      <Grid item xs={12} sm={3}>
-       <Home />
-      </Grid>
-      <Grid item xs={12} sm={3}>
-       <Home />
-      </Grid>
-    </Grid>
-    </>
-  );
+    <Router>
+    <Routes>
+      <Route path='/teste' element={<Navbar/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/historia' element={<Historia/>}></Route>
+    </Routes>
+ </Router>
+  )
 }
 
-export default App;
+

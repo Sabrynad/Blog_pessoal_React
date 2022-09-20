@@ -1,29 +1,18 @@
 import React from "react";
-import {Box, Paper} from "@material-ui/core";
+import Navbar from "../../components/estaticos/navbar/Navbar";
 import "./Home.css";
 
-function Home(){
-   return(
-    <>
-      <Paper>
-        <Box>
-            <Box>
-              <h1>Titulo</h1>
-            </Box>
-            <img src="https://i.pinimg.com/originals/f5/f9/f3/f5f9f3c041de6d0cdef88cdb54c2fc2c.jpg"alt="" />
-            <Box>
-              <button>
-                
-              </button>
-              <button>
+export  default function Home() {
+   return (
+      <>
+      <Navbar/>
+       <main id='home'>
+         <div id='img'>
+            <img id='fundo' src="https://media.glamour.mx/photos/6190c64df5ed039ceea8dc60/3:2/w_840,h_560,c_limit/154794.jpg" alt="" />
+         </div>
+      </main>
+      </>
+   )
 
-              </button>
-            </Box>
-        </Box>
-    </Paper>
-         
-    </>
-   );
 }
 
-export default Home;

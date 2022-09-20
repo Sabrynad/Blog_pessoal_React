@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 1em;
+
+}
+
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  
+}
+
+.item a{
+  margin-right: 5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.item a:hover{
+  color: rgb(240, 116, 0);
+ 
+}
+
+.logo {
+  border: 10px solid black;
+  border-image: url(https://i.imgur.com/FqSMl3J.png) 10 round;
+  display: block;
+  padding: 5px;
+  width: 120px;
+  height: 60px;
+}
